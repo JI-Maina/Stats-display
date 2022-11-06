@@ -4,6 +4,8 @@
 *:after
 *:before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -73,11 +75,9 @@ body {
     font-size: 20px;
     align-items: center;
     font-weight: 600;
-    img {
-        width: 20px;
-        margin-right: 12px;
-    }
 }
+
+
 
 .match-date {
     display: flex;
@@ -86,9 +86,6 @@ body {
     margin-left: auto;
     font-size: 14px;
     color: var(--color-text-alert);
-    strong {
-        color: black;
-    }
 }
 
 .match-content {
@@ -186,3 +183,68 @@ table {
     width: 100%;
     display: flex;
 }
+
+
+.all-stats {
+    display: grid;
+    grid-template-columns: 5fr;
+}
+
+.align {
+    display: grid;
+    grid-template-columns: 3.5fr 3.5fr 3.5fr;
+    align-items: center;
+    justify-items: center;
+    height: 3em;
+    box-shadow: 1px -1px 3px;
+}
+
+.home {
+    justify-self: start;
+    margin-left: 1.5em;
+}
+
+.away {
+    justify-self: end;
+    margin-right: 1.5em;
+}
+
+.middle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fa-chevron-down {
+    font-size: 0.8em;
+    margin-top: 0.7em;
+}
+
+.attempts, .possession, .crosses, .corners {
+    display: none;
+}
+
+.show {
+    display: grid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
