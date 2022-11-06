@@ -179,12 +179,6 @@ body {
     padding: 4px 8px;
 }
 
-table {
-    width: 100%;
-    display: flex;
-}
-
-
 .all-stats {
     display: grid;
     grid-template-columns: 5fr;
@@ -218,7 +212,7 @@ table {
     margin-top: 0.7em;
 }
 
-.attempts, .possession, .crosses, .corners {
+.attempts, .possession, .crosses, .corners, .cards {
     display: none;
 }
 

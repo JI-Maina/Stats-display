@@ -14,6 +14,10 @@ function expandStats(event) {
   else if (event.target.parentElement.id === 'btn-corners') {
     Array.from(document.querySelectorAll('.corners')).forEach(el => el.classList.toggle('show'));
   }
+
+  else if (event.target.parentElement.id === 'btn-cards') {
+    Array.from(document.querySelectorAll('.cards')).forEach(el => el.classList.toggle('show'));
+  }
 }
 
 
