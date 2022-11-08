@@ -46,9 +46,9 @@ body {
     background-color: var(--color-bg-primary);
     display: flex;
     flex-direction: column;
-    min-width: 600px;
+    width: 100%;
     border-radius: 16px;
-    box-shadow: 0 0 2px 0 rgba(#303030, 0.1), 0 4px 4px 0 rgba(#303030, 0.1);
+    box-shadow: 0 0 2px rgba(#303030, 0.1), 0 4px 4px 0 rgba(#303030, 0.1);
 }
 
 .match-header {
@@ -77,6 +77,10 @@ body {
     font-weight: 600;
 }
 
+.fkf-logo {
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
 
 
 .match-date {
@@ -94,35 +98,44 @@ body {
 }
 
 .column {
-    padding: 32px;
+    /* padding: 32px; */
     display: flex;
     justify-content: center;
     align-items: center;
     width: calc(100%/3);
+    /*Added */
+    padding: 3em 0;
 }
 
 .team {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .team-logo {
-    width: 100px;
-    height: 100px;
+    position: absolute;
+    top: -7.7em;
+    width: 135px;
+    height: 135px; 
+    margin: 0 1.2em;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: var(--color-bg-primary);
-    box-shadow: 0 4px 4px 0 rgba(#303030, 0.15), 0 0 0 15px var(--color-bg-secondary);
+    box-shadow: 0 0 1px 10px rgba(7, 6, 6, 0.6);
 }
 
+
 .team-name {
+    position: absolute;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 2em;
     font-size: 20px;
     font-weight: 600;
+    width: 6em;
 }
 
 .match-details {
@@ -207,18 +220,40 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.fa-chevron-down {
+.fa-chevron-down, .fa-chevron-up {
     font-size: 0.8em;
     margin-top: 0.7em;
 }
 
 .attempts, .possession, .crosses, .corners, .cards {
     display: none;
+    color: rgb(8, 8, 131);
 }
 
 .show {
     display: grid;
 }
+
+.footer {
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer > h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 3px 3px 3px;
+    color: #4b78b3;
+}
+
+.footer > p {
+    margin-top: -0.5em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
 
 
 
