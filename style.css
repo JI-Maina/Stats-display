@@ -230,8 +230,18 @@ body {
     color: rgb(8, 8, 131);
 }
 
+@keyframes stats {
+    0% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .show {
     display: grid;
+    animation: stats 0.1s 1;
 }
 
 .footer {
@@ -246,6 +256,19 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 3px 3px 3px;
     color: #4b78b3;
+    animation: tis 5s 3s infinite;
+}
+
+@keyframes tis {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
 }
 
 .footer > p {
